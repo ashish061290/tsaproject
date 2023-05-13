@@ -1,7 +1,7 @@
-<?php include('../config/config.php');
-      include('../lib/BaseModal.php');
-      include('../modal/AdminModal.php'); 
-      include('layouts/head.php');?>
+<?php require '../config/config.php';
+      require '../lib/BaseModal.php';
+      require '../modal/AdminModal.php'; 
+      require 'layouts/head.php';?>
 <body class="hold-transition skin-blue sidebar-mini"> 
 <div class="wrapper">
   <?php include('layouts/header.php'); ?>
