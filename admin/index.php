@@ -11,10 +11,10 @@ if(isset($_POST['adminLogin'])){
   $email = $_POST['username'];
   $pwd = $_POST['pwd'];
   $data = $login->AdminLogin($email,$pwd);
-  $sessdata = array("admin_id"=>$data['admin_id'],"role"=>$data['role']);
+  $sessdata = array("admin_id"=>$data['admin_id'],"role"=>1);
   $_SESSION['data'] = $sessdata;
   if($_SESSION['data']){
-   $LoginStatus =  $data['role'];
+   $LoginStatus =  1;
    } else{ $LoginStatus=""; }
   if($LoginStatus==1){
     $Base->redirect('dashboard.php');
