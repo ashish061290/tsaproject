@@ -1,7 +1,7 @@
 <?php
       class AdminModal extends BaseModal{
        public function AdminLogin($username,$password){
-           $sql = "SELECT * FROM `admin` WHERE `username`='".$username."' and `password`='".$password."' and role='1' and `status`='1'";  
+           $sql = "SELECT * FROM `admin` WHERE `username`='".$username."' and `password`='".$password."' and `status`='1'";  
            $conn = Connect::getConnection();
            $result = $conn->query($sql);
            if($result->num_rows > 0){
